@@ -1,46 +1,48 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <title>Kontak | Zen Forwarder</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<!-- Floating Contact Zen Forwarder -->
+<div class="floating-contact">
+  <a href="https://wa.me/6281234567890?text=Halo%20Zen%20Forwarder%2C%20saya%20ingin%20konsultasi%20jasa%20import%20dan%20export."
+     target="_blank"
+     title="Chat WhatsApp">
+     💬
+  </a>
 
-<header>
-  <h1>Zen Forwarder</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="layanan.html">Layanan</a>
-    <a href="tentang.html">Tentang Kami</a>
-    <a href="kontak.html">Kontak</a>
-  </nav>
-</header>
+  <a href="mailto:zenforwarder@email.com?subject=Konsultasi%20Jasa%20Forwarder&body=Halo%20Zen%20Forwarder%2C%0A%0ASaya%20ingin%20konsultasi%20jasa%20import%20dan%20export.%0A%0ATerima%20kasih."
+     title="Kirim Email">
+     📧
+  </a>
 
-<section class="content">
-  <h2>Hubungi Kami</h2>
- <a href="https://wa.me/628984528645?text=Halo%20Zen%20Forwarder%2C%20saya%20ingin%20konsultasi%20jasa%20import%20dan%20export."
-   target="_blank"
-   class="btn wa">
-   💬 WhatsApp
-</a>
-<a href="mailto:zenforwarder25@email.com
-?subject=Konsultasi%20Jasa%20Forwarder
-&body=Halo%20Zen%20Forwarder%2C%0A%0ASaya%20ingin%20konsultasi%20jasa%20import%20dan%20export.%0A%0ATerima%20kasih."
-class="btn email">
-📧 Email
-</a>
   <a href="https://www.instagram.com/zenforwarder/"
-   target="_blank"
-   class="btn ig">
-   📸 Instagram
-</a>
-  <p>⏰ Jam Operasional: Senin – Jumat</p>
-</section>
+     target="_blank"
+     title="Instagram Zen Forwarder">
+     📸
+  </a>
+</div>
+/* Floating Contact */
+.floating-contact {
+  position: fixed;
+  right: 16px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 999;
+}
 
-<footer>
-  <p>© 2026 Zen Forwarder</p>
-</footer>
+.floating-contact a {
+  width: 48px;
+  height: 48px;
+  background: #0b3c5d;
+  color: white;
+  text-align: center;
+  line-height: 48px;
+  font-size: 22px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
 
-</body>
-</html>
+.floating-contact a:hover {
+  transform: scale(1.1);
+  background: #1d6fa5;
+}
