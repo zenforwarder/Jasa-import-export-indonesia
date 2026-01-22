@@ -1,41 +1,212 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Zen Forwarder | Import & Export</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zen Forwarder | Import & Freight Services</title>
+  <meta name="description" content="Zen Forwarder – Import, Freight Forwarder, Sea Freight, Air Freight, Door to Door Import, Customs Clearance Indonesia." />
+  <meta name="keywords" content="freight forwarder indonesia, jasa import, import china indonesia, sea freight, air freight, door to door import, customs clearance, undername import" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #0b3c5d;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 55px;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: linear-gradient(rgba(11,60,93,0.85), rgba(11,60,93,0.85)), url('hero.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 80px 40px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+    }
+    section {
+      padding: 60px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      color: #0b3c5d;
+      margin-bottom: 20px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    footer {
+      background: #0b3c5d;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .contact p {
+      margin: 8px 0;
+    }
+    @media(max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav {
+        margin-top: 10px;
+      }
+    }
+  .social-buttons{margin-top:20px;display:flex;gap:15px;flex-wrap:wrap}
+.btn{padding:12px 20px;border-radius:6px;color:#fff;text-decoration:none;font-weight:bold}
+.wa{background:#25D366}
+.ig{background:#C13584}
+.tt{background:#000}
+.btn:hover{opacity:.85}
+
+/* CTA Button */
+.cta{display:inline-block;margin-top:25px;padding:14px 28px;background:#ff9800;color:#fff;font-weight:bold;border-radius:30px;text-decoration:none;font-size:16px}
+.cta:hover{opacity:.9}
+
+/* Social Icons */
+.social-buttons{margin-top:25px;display:flex;gap:20px;justify-content:center}
+.social-buttons a{font-size:28px;color:#fff;text-decoration:none}
+.social-buttons .wa{color:#25D366}
+.social-buttons .ig{color:#C13584}
+.social-buttons .tt{color:#000}
+
+/* Floating WhatsApp */
+.floating-wa{position:fixed;bottom:25px;right:25px;background:#25D366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:999}
+.floating-wa:hover{opacity:.9}
+
+</style>
 </head>
 <body>
 
 <header>
-  <h1>Zen Forwarder</h1>
+  <img src="logo.png" alt="Zen Forwarder Logo" />
   <nav>
-    <a href="index.html">Home</a>
-    <a href="layanan.html">Layanan</a>
-    <a href="tentang.html">Tentang Kami</a>
-    <a href="kontak.html">Kontak</a>
+    <a href="#about" data-id="about">About</a>
+    <a href="#services" data-id="services">Services</a>
+    <a href="#contact" data-id="contact">Contact</a>
+    <a href="javascript:void(0)" onclick="setLang('id')">ID</a> |
+    <a href="javascript:void(0)" onclick="setLang('en')">EN</a>
   </nav>
 </header>
 
-<section class="hero">
-  <h2>Jasa Forwarder Import & Export Terpercaya</h2>
-  <p>Melayani pengiriman dari China, Singapore, Malaysia, Thailand & USA</p>
-  <a class="btn" href="kontak.html">Hubungi Kami</a>
+<div class="hero">
+  <h1 data-id="hero_title">Reliable Import & Logistics Solutions</h1>
+  <p data-id="hero_desc">Personal Freight Forwarder – Supported by PT Agung Pertiwi Wiranti</p>
+  <a href="https://wa.me/628984528645" target="_blank" class="cta" data-id="hero_cta">Get a Free Quote</a>
+</div>
+
+<section id="about">
+  <h2 data-id="about_title">About Me</h2>
+  <p data-id="about_text">My name is Zen, a professional Freight Forwarder supported by PT Agung Pertiwi Wiranti. I handle import shipments via Sea Freight and Air Freight with secure, transparent, and efficient service.</p>
 </section>
 
-<section class="content">
-  <h3>Mengapa Zen Forwarder?</h3>
+<section id="services">
+  <h2 data-id="services_title">Services</h2>
+  <div class="services">
+    <div class="card"><h3 data-id="s1">Sea Freight</h3><p data-id="s1d">FCL & LCL shipments with competitive rates.</p></div>
+    <div class="card"><h3 data-id="s2">Air Freight</h3><p data-id="s2d">Fast delivery for urgent cargo.</p></div>
+    <div class="card"><h3 data-id="s3">Door to Door Import</h3><p data-id="s3d">End-to-end import solution.</p></div>
+    <div class="card"><h3 data-id="s4">Customs Clearance</h3><p data-id="s4d">Professional customs handling.</p></div>
+  </div>
+</section>
+
+<section id="why">
+  <h2>Why Choose Me</h2>
   <ul>
-    <li>✔ Import & Export resmi</li>
-    <li>✔ Air Freight & Sea Freight</li>
-    <li>✔ Door to Door Service</li>
-    <li>✔ Customs Clearance</li>
+    <li>Professional and experienced freight forwarder</li>
+    <li>Supported by PT Agung Pertiwi Wiranti</li>
+    <li>Fast response and clear communication</li>
+    <li>Transparent pricing</li>
   </ul>
 </section>
 
+<section id="contact" class="contact">
+  <h2 data-id="contact_title">Contact</h2>
+  <p><strong>Zen – Freight Forwarder</strong></p>
+  <p>Email: zenforwarder25@gmail.com</p>
+  <p>Jakarta, Indonesia</p>
+
+  <div class="social-buttons">
+    <a href="https://wa.me/628984528645" target="_blank"><img src="wa.svg" alt="WhatsApp" width="32"></a>
+    <a href="https://www.instagram.com/" target="_blank"><img src="ig.svg" alt="Instagram" width="32"></a>
+    <a href="https://www.tiktok.com/" target="_blank"><img src="tt.svg" alt="TikTok" width="32"></a>
+  </div>
+</section>
+
 <footer>
-  <p>© 2026 Zen Forwarder</p>
+  <p>© 2026 Zen Forwarder. All Rights Reserved.</p>
 </footer>
 
+<a href="https://wa.me/628984528645" target="_blank" class="floating-wa"><img src="wa.svg" alt="WhatsApp" width="32"></a>
+
+<script>
+const lang={
+ id:{
+  hero_title:'Solusi Import & Logistik Terpercaya',
+  hero_desc:'Freight Forwarder Profesional – Didukung PT Agung Pertiwi Wiranti',
+  hero_cta:'Konsultasi Gratis',
+  about_title:'Tentang Saya',
+  about_text:'Saya Zen, freight forwarder profesional yang menangani jasa import laut dan udara dengan layanan aman dan transparan.',
+  services_title:'Layanan',
+  s1:'Sea Freight', s1d:'Pengiriman FCL & LCL harga kompetitif',
+  s2:'Air Freight', s2d:'Pengiriman cepat dan aman',
+  s3:'Door to Door Import', s3d:'Dari supplier ke alamat tujuan',
+  s4:'Customs Clearance', s4d:'Pengurusan bea cukai profesional',
+  contact_title:'Kontak'
+ },
+ en:{
+  hero_title:'Reliable Import & Logistics Solutions',
+  hero_desc:'Professional Freight Forwarder – Supported by PT Agung Pertiwi Wiranti',
+  hero_cta:'Get a Free Quote',
+  about_title:'About Me',
+  about_text:'I am Zen, a professional freight forwarder handling sea and air import shipments with reliable service.',
+  services_title:'Services',
+  s1:'Sea Freight', s1d:'FCL & LCL shipments at competitive rates',
+  s2:'Air Freight', s2d:'Fast and secure delivery',
+  s3:'Door to Door Import', s3d:'From supplier to destination',
+  s4:'Customs Clearance', s4d:'Professional customs handling',
+  contact_title:'Contact'
+ }
+};
+function setLang(l){
+ document.querySelectorAll('[data-id]').forEach(e=>e.innerText=lang[l][e.dataset.id]);
+}
+</script>
 </body>
 </html>
