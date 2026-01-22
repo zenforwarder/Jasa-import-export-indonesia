@@ -110,6 +110,9 @@
 .floating-wa{position:fixed;bottom:25px;right:25px;background:#25D366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:999}
 .floating-wa:hover{opacity:.9}
 
+#quote{background:#fff;padding:60px 40px;margin-top:40px;border-radius:12px}
+#quote input{width:100%;padding:12px;border-radius:6px;border:1px solid #ccc}
+
 </style>
 </head>
 <body>
@@ -139,11 +142,22 @@
 <section id="services">
   <h2 data-id="services_title">Services</h2>
   <div class="services">
-    <div class="card"><h3 data-id="s1">Sea Freight</h3><p data-id="s1d">FCL & LCL shipments with competitive rates.</p></div>
-    <div class="card"><h3 data-id="s2">Air Freight</h3><p data-id="s2d">Fast delivery for urgent cargo.</p></div>
-    <div class="card"><h3 data-id="s3">Door to Door Import</h3><p data-id="s3d">End-to-end import solution.</p></div>
-    <div class="card"><h3 data-id="s4">Customs Clearance</h3><p data-id="s4d">Professional customs handling.</p></div>
+    <div class="card"><h3 data-id="s1">Sea Freight</h3><p data-id="s1d">FCL & LCL shipments at competitive rates</p></div>
+    <div class="card"><h3 data-id="s2">Air Freight</h3><p data-id="s2d">Fast and secure delivery</p></div>
+    <div class="card"><h3 data-id="s3">Door to Door Import</h3><p data-id="s3d">From supplier to destination</p></div>
+    <div class="card"><h3 data-id="s4">Customs Clearance</h3><p data-id="s4d">Professional customs handling</p></div>
   </div>
+</section>
+
+<section id="quote">
+  <h2>Instant Quotation</h2>
+  <form onsubmit="sendWA(event)">
+    <input type="text" id="name" placeholder="Your Name" required><br><br>
+    <input type="text" id="cargo" placeholder="Cargo Description" required><br><br>
+    <input type="text" id="origin" placeholder="Country of Origin" required><br><br>
+    <input type="text" id="dest" placeholder="Destination" required><br><br>
+    <button type="submit" class="cta">Get Quotation via WhatsApp</button>
+  </form>
 </section>
 
 <section id="why">
@@ -208,5 +222,32 @@ function setLang(l){
  document.querySelectorAll('[data-id]').forEach(e=>e.innerText=lang[l][e.dataset.id]);
 }
 </script>
+<section id="blog">
+  <h2>Import Tips & Logistics Insights</h2>
+  <div class="services">
+    <div class="card"><h3>How to Import from China to Indonesia</h3><p>Basic guide for beginners importing goods safely.</p></div>
+    <div class="card"><h3>Sea Freight vs Air Freight</h3><p>Which shipping method is best for your cargo?</p></div>
+    <div class="card"><h3>Customs Clearance Process</h3><p>Important documents you must prepare.</p></div>
+  </div>
+</section>
+
+<script>
+function sendWA(e){
+ e.preventDefault();
+ const msg=`Name: ${name.value}%0ACargo: ${cargo.value}%0AOrigin: ${origin.value}%0ADestination: ${dest.value}`;
+ window.open(`https://wa.me/628984528645?text=${msg}`,'_blank');
+}
+</script>
+
+<!-- Google Analytics Placeholder -->
+<!-- Replace G-XXXXXXX with your GA4 ID -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+gtag('config', 'G-XXXXXXX');
+</script> -->
+
 </body>
 </html>
+
