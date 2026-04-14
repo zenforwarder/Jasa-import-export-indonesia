@@ -1,299 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zen Forwarder | Import & Freight Services</title>
-  <meta name="description" content="Zen Forwarder – Import, Freight Forwarder, Sea Freight, Air Freight, Door to Door Import, Customs Clearance Indonesia." />
-  <meta name="keywords" content="freight forwarder indonesia, jasa import, import china indonesia, sea freight, air freight, door to door import, customs clearance, undername import, cargo udara, cargo laut, cargo import, jasa import terdekat, jasa import jakarta, sewa undername, HS Code, Perizinan Import, PI, import mudah, Jasa import barang dari china ke indonesia, door to door, Jasa import China, biaya import barang china, import barang gak ribet" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zen Import Solution</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: #0b3c5d;
-      color: #ffffff;
-      padding: 20px 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    header img {
-      height: 55px;
-    }
-    nav a {
-      color: #fff;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .hero {
-      background: linear-gradient(rgba(11,60,93,0.85), rgba(11,60,93,0.85)), url('hero.mp4');
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      padding: 80px 40px;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 18px;
-    }
-    section {
-      padding: 60px 40px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    h2 {
-      color: #0b3c5d;
-      margin-bottom: 20px;
-    }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: #fff;
-      padding: 25px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    }
-    footer {
-      background: #0b3c5d;
-      color: #fff;
-      text-align: center;
-      padding: 30px 20px;
-    }
-    .contact p {
-      margin: 8px 0;
-    }
-    @media(max-width: 768px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
-      nav {
-        margin-top: 10px;
-      }
-    }
-  .social-buttons{margin-top:20px;display:flex;gap:15px;flex-wrap:wrap}
-.btn{padding:12px 20px;border-radius:6px;color:#fff;text-decoration:none;font-weight:bold}
-.wa{background:#25D366}
-.ig{background:#C13584}
-.tt{background:#000}
-.btn:hover{opacity:.85}
-
-/* CTA Button */
-.cta{display:inline-block;margin-top:25px;padding:14px 28px;background:#ff9800;color:#fff;font-weight:bold;border-radius:30px;text-decoration:none;font-size:16px}
-.cta:hover{opacity:.9}
-
-/* Social Icons */
-.social-buttons{margin-top:25px;display:flex;gap:20px;justify-content:center}
-.social-buttons a{font-size:28px;color:#fff;text-decoration:none}
-.social-buttons .wa{color:#25D366}
-.social-buttons .ig{color:#C13584}
-.social-buttons .tt{color:#000}
-
-/* Floating WhatsApp */
-.floating-wa{position:fixed;bottom:25px;right:25px;background:#25D366;color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:999}
-.floating-wa:hover{opacity:.9}
-
-#quote{background:#fff;padding:60px 40px;margin-top:40px;border-radius:12px}
-#quote input{width:100%;padding:12px;border-radius:6px;border:1px solid #ccc}
-
-    /* PAGE LOAD ANIMATION */
-body {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: pageLoad .9s ease forwards;
-}
-
-@keyframes pageLoad {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-    
-/* HERO ANIMATION */
-.hero h1 {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: heroTitle 1s ease forwards;
-  animation-delay: .4s;
-}
-
-.hero p {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: heroDesc 1s ease forwards;
-  animation-delay: .7s;
-}
-
-.hero .cta {
-  opacity: 0;
-  transform: scale(.85);
-  animation: heroBtn 1s ease forwards;
-  animation-delay: 1s;
-}
-
-@keyframes heroTitle {
-  to { opacity: 1; transform: translateY(0); }
-}
-@keyframes heroDesc {
-  to { opacity: 1; transform: translateY(0); }
-}
-@keyframes heroBtn {
-  to { opacity: 1; transform: scale(1); }
-}
-</style>
+    body { font-family: 'Poppins', sans-serif; margin:0; background:#f4f6f9; color:#222; }
+    header { background:linear-gradient(rgba(13,27,42,0.85), rgba(13,27,42,0.9)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d'); background-size:cover; color:white; padding:120px 20px; text-align:center; }
+    header h1 { font-size:48px; margin-bottom:15px; letter-spacing:1px; }
+    header p { font-size:20px; opacity:0.9; }
+    section { padding:70px 20px; max-width:1200px; margin:auto; }
+    h2 { margin-bottom:25px; font-size:28px; }
+    .btn { background:#25D366; color:white; padding:14px 28px; text-decoration:none; border-radius:8px; display:inline-block; margin-top:20px; font-weight:600; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:30px; }
+    .card { background:white; padding:30px; border-radius:16px; box-shadow:0 15px 40px rgba(0,0,0,0.08); transition:0.3s; }
+    .card:hover { transform:translateY(-8px); }
+    .icon { font-size:36px; margin-bottom:15px; color:#0d1b2a; }
+    .section-dark { background:#0d1b2a; color:white; border-radius:20px; }
+    .section-dark h2 { color:#ffffff; }
+    .section-dark .step { color:#000; }
+    .section-dark .step p { color:#000; }
+    .section-dark .step strong { color:#000; }
+    .steps { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:25px; }
+    .step { background:white; padding:25px; border-radius:12px; text-align:center; box-shadow:0 10px 25px rgba(0,0,0,0.05); }
+    .step span { display:block; font-size:28px; font-weight:bold; color:#25D366; margin-bottom:10px; }
+    footer { background:#0d1b2a; color:white; text-align:center; padding:30px; margin-top:50px; }
+    .floating-wa { position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:16px 18px; border-radius:50%; font-size:22px; box-shadow:0 5px 15px rgba(0,0,0,0.3); }
+  </style>
 </head>
 <body>
 
+<nav style="position:sticky;top:0;background:white;padding:15px 30px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 5px 15px rgba(0,0,0,0.05);z-index:999;">
+  <div style="font-weight:700;font-size:20px;">Zen Import</div>
+  <div style="display:flex;gap:25px;align-items:center;">
+    <a href="#" style="text-decoration:none;color:#333;">Home</a>
+    <a href="#about" style="text-decoration:none;color:#333;">Tentang</a>
+    <a href="#services" style="text-decoration:none;color:#333;">Layanan</a>
+    <a href="#process" style="text-decoration:none;color:#333;">Proses</a>
+    <a href="#contact" style="text-decoration:none;color:#333;">Kontak</a>
+    <a href="https://wa.me/6281370493094" style="background:#25D366;color:white;padding:8px 15px;border-radius:6px;text-decoration:none;">WhatsApp</a>
+  </div>
+</nav>
+
 <header>
-  <img src="logo.png" alt="Zen Forwarder Logo" />
-  <nav>
-    <a href="#about" data-id="about">About</a>
-    <a href="#services" data-id="services">Services</a>
-    <a href="#contact" data-id="contact">Contact</a>
-    <a href="javascript:void(0)" onclick="setLang('id')">ID</a> |
-    <a href="javascript:void(0)" onclick="setLang('en')">EN</a>
-  </nav>
+  <h1>Zen Import Solution</h1>
+  <p>International Freight Forwarding & Import Specialist</p>
+  <a class="btn" href="https://wa.me/6281370493094"><i class="fa-brands fa-whatsapp"></i> Konsultasi Sekarang</a>
 </header>
 
-<div class="hero">
-  <h1 data-id="hero_title">Reliable Import & Logistics Solutions</h1>
-  <p data-id="hero_desc">Personal Freight Forwarder – Supported by PT Agung Pertiwi Wiranti</p>
-  <a href="https://wa.me/628984528645" target="_blank" class="cta" data-id="hero_cta">Get a Free Quote</a>
-</div>
+<section>
+  <h2><i class="fa-solid fa-building"></i> <h2 id="about"><i class="fa-solid fa-user"></i> Tentang Saya</h2>
+  <div class="card" style="line-height:1.8; font-size:16px;">
+    <p><strong>Saya adalah seorang profesional di bidang jasa import dan logistik internasional</strong> yang berfokus membantu individu maupun perusahaan dalam proses pengiriman barang dari luar negeri ke Indonesia dengan mudah, aman, dan efisien.</p>
 
-<section id="about">
-  <h2 data-id="about_title">About Me</h2>
-  <p data-id="about_text">My name is Zen, a professional freight forwarder specializing in import and cargo shipping services via Sea Freight and Air Freight. I am committed to helping individuals and businesses manage their logistics needs in a safe, efficient, and reliable manner.
-With experience in handling various types of imported goods, I provide comprehensive services including door-to-door import, undername import services, and customs clearance documentation. Every shipment is managed with careful planning, clear communication, and full support from the initial process until the goods arrive at their destination.
-My commitment is to deliver practical logistics solutions, transparent pricing, and on-time delivery, while maintaining high standards of professionalism. I believe that trust is the foundation of a successful logistics partnership, and I handle every shipment with responsibility and dedication.</p>
-</section>
+    <p>Dengan pengalaman dalam menangani berbagai jenis pengiriman, saya memahami bahwa proses import seringkali terasa rumit dan memakan waktu. Oleh karena itu, saya hadir untuk memberikan solusi praktis melalui layanan handling import yang transparan dan terpercaya.</p>
 
-<section id="services">
-  <h2 data-id="services_title">Services</h2>
-  <div class="services">
-    <div class="card"><h3 data-id="s1">Sea Freight</h3><p data-id="s1d">FCL & LCL shipments at competitive rates</p></div>
-    <div class="card"><h3 data-id="s2">Air Freight</h3><p data-id="s2d">Fast and secure delivery</p></div>
-    <div class="card"><h3 data-id="s3">Door to Door Import</h3><p data-id="s3d">From supplier to destination</p></div>
-    <div class="card"><h3 data-id="s4">Customs Clearance</h3><p data-id="s4d">Professional customs handling</p></div>
+    <div style="background:#f8fafc;padding:20px;border-radius:12px;margin:20px 0;">
+      <strong>Fokus utama saya:</strong>
+      <p style="margin-top:10px;">Menangani seluruh proses import, mulai dari pengiriman internasional, pengurusan bea cukai, hingga distribusi akhir ke lokasi Anda (door to door).</p>
+    </div>
+
+    <div style="margin-top:20px;">
+      <strong>Komitmen layanan:</strong>
+      <ul style="margin-top:10px; padding-left:20px;">
+        <li>Profesional & terpercaya</li>
+        <li>Transparan tanpa biaya tersembunyi</li>
+        <li>Fleksibel (resmi & borongan all-in)</li>
+        <li>Mudah dipahami, bahkan untuk pemula</li>
+      </ul>
+    </div>
+
+    <p style="margin-top:20px;">Dengan pendekatan yang sederhana dan efisien, saya membantu Anda menjalankan proses import tanpa ribet, sehingga Anda dapat lebih fokus pada pengembangan bisnis Anda.</p>
   </div>
 </section>
 
-<section id="quote">
-  <h2>Instant Quotation</h2>
-  <form onsubmit="sendWA(event)">
-    <input type="text" id="name" placeholder="Your Name" required><br><br>
-    <input type="text" id="cargo" placeholder="Cargo Description" required><br><br>
-    <input type="text" id="origin" placeholder="Country of Origin" required><br><br>
-    <input type="text" id="dest" placeholder="Destination" required><br><br>
-    <button type="submit" class="cta">Get Quotation via WhatsApp</button>
-  </form>
+<section>
+  <h2 id="services"><i class="fa-solid fa-briefcase"></i> Layanan</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="icon"><i class="fa-solid fa-truck"></i></div>
+      <h3>Door to Door Import</h3>
+      <p>Layanan lengkap dari supplier hingga pengiriman ke alamat tujuan.</p>
+    </div>
+    <div class="card">
+      <div class="icon"><i class="fa-solid fa-file-contract"></i></div>
+      <h3>Custom Clearance</h3>
+      <p>Penanganan dokumen dan kepabeanan secara profesional dan sesuai regulasi.</p>
+    </div>
+    <div class="card">
+      <div class="icon"><i class="fa-solid fa-globe"></i></div>
+      <h3>Global Sourcing</h3>
+      <p>Pencarian supplier terpercaya dari berbagai negara.</p>
+    </div>
+    <div class="card">
+      <div class="icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+      <h3>Freight Solutions</h3>
+      <p>Layanan LCL & FCL sesuai kebutuhan pengiriman Anda.</p>
+    </div>
+    <div class="card">
+      <div class="icon"><i class="fa-solid fa-scale-balanced"></i></div>
+      <h3>Import Resmi</h3>
+      <p>Layanan import menggunakan jalur resmi dengan dokumen lengkap dan sesuai regulasi pemerintah.</p>
+    </div>
+    <div class="card">
+      <div class="icon"><i class="fa-solid fa-box"></i></div>
+      <h3>Borongan All-in</h3>
+      <p>Biaya sudah termasuk semua tanpa biaya tambahan tersembunyi. Lebih praktis untuk Anda yang ingin simple.</p>
+    </div>
+    <div class="card">
+      <div class="icon"><i class="fa-solid fa-ship"></i></div>
+      <h3>Sea Freight</h3>
+      <p>Pengiriman via laut dengan biaya lebih hemat untuk volume besar.</p>
+    </div>
+    <div class="card">
+      <div class="icon"><i class="fa-solid fa-plane"></i></div>
+      <h3>Air Freight</h3>
+      <p>Pengiriman cepat via udara untuk kebutuhan mendesak.</p>
+    </div>
+    <div class="card">
+      <div class="icon"><i class="fa-solid fa-warehouse"></i></div>
+      <h3>Warehouse Handling</h3>
+      <p>Layanan penyimpanan dan handling barang di gudang sebelum dikirim.</p>
+    </div>
+  </div>
 </section>
 
-<section id="why">
-  <h2>Why Choose Me</h2>
-  <ul>
-    <li>Professional and experienced freight forwarder</li>
-    <li>Supported by PT Agung Pertiwi Wiranti</li>
-    <li>Fast response and clear communication</li>
-    <li>Transparent pricing</li>
-  </ul>
+<section id="process" class="section-dark">
+  <h2><i class="fa-solid fa-diagram-project"></i> Alur Proses</h2>
+  <div class="steps">
+    <div class="step">
+      <span>1</span>
+      <strong>Konsultasi</strong>
+      <p>Diskusikan kebutuhan barang, negara asal, dan detail pengiriman.</p>
+    </div>
+    <div class="step">
+      <span>2</span>
+      <strong>Penawaran</strong>
+      <p>Kami berikan estimasi biaya dan waktu pengiriman secara transparan.</p>
+    </div>
+    <div class="step">
+      <span>3</span>
+      <strong>Deal & Pembayaran</strong>
+      <p>Konfirmasi kerja sama dan proses pembayaran sesuai kesepakatan.</p>
+    </div>
+    <div class="step">
+      <span>4</span>
+      <strong>Pengadaan Barang</strong>
+      <p>Barang dibeli dari supplier atau dikirim ke gudang kami.</p>
+    </div>
+    <div class="step">
+      <span>5</span>
+      <strong>Proses Import</strong>
+      <p>Pengurusan dokumen, bea cukai, dan pengiriman internasional.</p>
+    </div>
+    <div class="step">
+      <span>6</span>
+      <strong>Pengiriman Lokal</strong>
+      <p>Barang dikirim ke alamat tujuan Anda dengan aman.</p>
+    </div>
+  </div>
 </section>
 
-<section id="contact" class="contact">
-  <h2 data-id="contact_title">Contact</h2>
-  <p><strong>Zen – Freight Forwarder</strong></p>
-  <p>Email: zenforwarder25@gmail.com</p>
-  <p>Jakarta, Indonesia</p>
+<section>
+  <h2><i class="fa-solid fa-award"></i> Why Choose Us</h2>
+  <div class="grid">
+    <div class="card">Profesional & Berpengalaman</div>
+    <div class="card">Jaringan Global Supplier</div>
+    <div class="card">Proses Transparan</div>
+    <div class="card">Tim Responsif & Supportif</div>
+  </div>
+</section>
 
-  <div class="social-buttons">
-    <a href="https://wa.me/628984528645" target="_blank"><img src="wa.svg" alt="WhatsApp" width="32"></a>
-    <a href="https://www.instagram.com/" target="_blank"><img src="ig.svg" alt="Instagram" width="32"></a>
-    <a href="https://www.tiktok.com/" target="_blank"><img src="tt.svg" alt="TikTok" width="32"></a>
+<section>
+  <h2><i class="fa-solid fa-industry"></i> Industry Coverage</h2>
+  <div class="card">
+    <p>Kami melayani kebutuhan impor untuk berbagai sektor industri dengan solusi yang fleksibel, efisien, dan terpercaya. Berikut adalah cakupan industri yang kami dukung:</p>
+
+    <p><strong>1. Industri Manufaktur</strong><br>
+    Menyediakan impor mesin produksi, spare part, dan bahan baku untuk menunjang operasional pabrik secara optimal.</p>
+
+    <p><strong>2. Industri Konstruksi & Proyek</strong><br>
+    Pengadaan alat berat, material konstruksi, hingga kebutuhan proyek skala besar (resmi maupun borongan all-in).</p>
+
+    <p><strong>3. Industri Plastik & Packaging</strong><br>
+    Import mesin plastik seperti HDPE, injection, blow molding, serta bahan baku dan perlengkapannya.</p>
+
+    <p><strong>4. Industri Food & Beverage</strong><br>
+    Pengadaan mesin pengolahan makanan, packaging, hingga peralatan pendukung produksi F&B.</p>
+
+    <p><strong>5. Industri Elektronik & Teknologi</strong><br>
+    Import komponen elektronik, perangkat IT, mesin otomatisasi, dan teknologi industri terbaru.</p>
+
+    <p><strong>6. Industri Retail & Trading</strong><br>
+    Menyediakan berbagai produk jadi untuk kebutuhan jual kembali (reseller, distributor, maupun e-commerce).</p>
+
+    <p><strong>7. Industri Otomotif</strong><br>
+    Import spare part kendaraan, mesin, tools bengkel, dan perlengkapan otomotif lainnya.</p>
+
+    <p><strong>8. Industri Fashion & Textile</strong><br>
+    Pengadaan bahan kain, mesin jahit industri, serta produk fashion dari berbagai negara.</p>
+  </div>
+</section>
+
+<section class="section-dark" style="text-align:center;">
+  <h2>Start Your Import Journey With Us</h2>
+  <p>Kami siap menjadi partner logistik terpercaya untuk bisnis Anda.</p>
+  <a class="btn" href="https://wa.me/6281370493094"><i class="fa-brands fa-whatsapp"></i> Hubungi Kami</a>
+</section>
+
+<section id="contact">
+  <h2><i class="fa-solid fa-address-book"></i> Kontak</h2>
+  <div class="grid">
+    <div class="card"><i class="fa-brands fa-whatsapp icon"></i><p><a href="https://wa.me/6281370493094" target="_blank">WhatsApp: 0813-7049-3094</a></p></div>
+    <div class="card"><i class="fa-solid fa-envelope icon"></i><p><a href="mailto:zen.importsolution.com">Email: zen.importsolution.com</a></p></div>
+    <div class="card"><i class="fa-brands fa-tiktok icon"></i><p><a href="https://www.tiktok.com/@zenforwarder" target="_blank">TikTok: @zenforwarder</a></p></div>
+    <div class="card"><i class="fa-brands fa-linkedin icon"></i><p><a href="https://www.linkedin.com/in/zenhoow-apw" target="_blank">LinkedIn: Zenhoow APW</a></p></div>
+    <div class="card"><i class="fa-brands fa-instagram icon"></i><p><a href="https://www.instagram.com/zenforwarder" target="_blank">Instagram: @zenforwarder</a></p></div>
+    <div class="card"><i class="fa-brands fa-threads icon"></i><p><a href="https://www.threads.net/@zenhoww" target="_blank">Threads: @zenhoww</a></p></div>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Zen Forwarder. All Rights Reserved.</p>
+  <p>© 2026 Zen Import Solution | Professional Import & Logistics Partner</p>
 </footer>
 
-<a href="https://wa.me/628984528645" target="_blank" class="floating-wa"><img src="wa.svg" alt="WhatsApp" width="32"></a>
+<a href="https://wa.me/6281370493094" class="floating-wa">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
 
-<script>
-const lang={
- id:{
-  hero_title:'Solusi Import & Logistik Terpercaya',
-  hero_desc:'Freight Forwarder Profesional – Didukung PT Agung Pertiwi Wiranti',
-  hero_cta:'Konsultasi Gratis',
-  about_title:'Tentang Saya',
-  about_text:'Saya Zen, freight forwarder profesional yang menangani jasa import laut dan udara dengan layanan aman dan transparan.',
-  services_title:'Layanan',
-  s1:'Sea Freight', s1d:'Pengiriman FCL & LCL harga kompetitif',
-  s2:'Air Freight', s2d:'Pengiriman cepat dan aman',
-  s3:'Door to Door Import', s3d:'Dari supplier ke alamat tujuan',
-  s4:'Customs Clearance', s4d:'Pengurusan bea cukai profesional',
-  contact_title:'Kontak'
- },
- en:{
-  hero_title:'Reliable Import & Logistics Solutions',
-  hero_desc:'Professional Freight Forwarder – Supported by PT Agung Pertiwi Wiranti',
-  hero_cta:'Get a Free Quote',
-  about_title:'About Me',
-  about_text:'I am Zen, a professional freight forwarder handling sea and air import shipments with reliable service.',
-  services_title:'Services',
-  s1:'Sea Freight', s1d:'FCL & LCL shipments at competitive rates',
-  s2:'Air Freight', s2d:'Fast and secure delivery',
-  s3:'Door to Door Import', s3d:'From supplier to destination',
-  s4:'Customs Clearance', s4d:'Professional customs handling',
-  contact_title:'Contact'
- }
-};
-function setLang(l){
- document.querySelectorAll('[data-id]').forEach(e=>e.innerText=lang[l][e.dataset.id]);
-}
-</script>
-<section id="blog">
-  <h2>Import Tips & Logistics Insights</h2>
-  <div class="services">
-    <div class="card"><h3>How to Import from China to Indonesia</h3><p>Basic guide for beginners importing goods safely.</p></div>
-    <div class="card"><h3>Sea Freight vs Air Freight</h3><p>Which shipping method is best for your cargo?</p></div>
-    <div class="card"><h3>Customs Clearance Process</h3><p>Important documents you must prepare.</p></div>
-  </div>
-</section>
-
-<script>
-function sendWA(e){
- e.preventDefault();
- const msg=`Name: ${name.value}%0ACargo: ${cargo.value}%0AOrigin: ${origin.value}%0ADestination: ${dest.value}`;
- window.open(`https://wa.me/628984528645?text=${msg}`,'_blank');
-}
-</script>
-
-<!-- Google Analytics Placeholder -->
-<!-- Replace G-XXXXXXX with your GA4 ID -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
-gtag('config', 'G-XXXXXXX');
-</script> -->
+</body>
+</html>
 
 </body>
 </html>
